@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kesheTest.dao.NewsMapper">
+    <insert id="addNews" parameterType="News">
+        insert into news.newst(head,body,date,summary,author)
+                value (#{head},#{body},#{date},#{summary},#{author})
+    </insert>
+
+    <delete id="deleteNewsByID" parameterType="int">
+        delete from news.newst where id = #{newsId}
+    </delete>
+
+    <update id="updateNews" parameterType="News">
+        update news.newst set head = #{head}, body = #{body},date = #{date},summary = #{summary},author = #{author}
+        where id = #{id} ;
+    </update>
+
+    <select id="queryNewsByID" resultType="News">
+        select * from news.newst where id = #{newsId}
+    </select>
+
+    <select id="queryAllNews" resultType="News">
+        select * from news.newst
+    </select>
+
+    <select id="queryNewsByHead" resultType="News">
+        select * from news.newst where head like concat('%',#{newsHead},'%')
+    </select>
+</mapper>
+
