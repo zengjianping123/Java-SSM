@@ -4,27 +4,21 @@
 基于SMM框架下的员工管理系统
 
 #### 软件架构
-软件架构说明
+Spring + SpringMVC + Mybatis
+
+Mysql 5.7
+
+Tomcat 9
 
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  新建数据库news, 导入sql文件夹下的sql文件, 并在database.properties文件下修改本地的数据库信息;
+2.  确保Tomcat环境;
 
-#### 使用说明
+#### 学习说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0501/144921_c86c5cbf_4892898.png "SSM框架.png")
 
 
 #### 特技
