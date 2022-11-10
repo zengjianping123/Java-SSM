@@ -21,9 +21,8 @@
   </style>
 </head>
 <body>
-
 <h3>
-  <a href="${pageContext.request.contextPath}/news/login">点击进入新闻列表</a>
+  <a href="${pageContext.request.contextPath}/user/loginVeiw">点击进入环境智能检测系统</a>
 </h3>
 </body>
 </html>
