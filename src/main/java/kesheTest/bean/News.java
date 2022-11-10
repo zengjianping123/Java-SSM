@@ -1,7 +1,9 @@
 package kesheTest.bean;
 
-import java.sql.Date;
+import org.springframework.stereotype.Component;
 
+import java.sql.Date;
+@Component
 public class News {
     private int id;
     private String head;

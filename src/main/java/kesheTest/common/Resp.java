@@ -1,6 +1,6 @@
-package com.xtyuns.common;
+package kesheTest.common;
 
-public class Resp<T> {
+public class Resp<T>  {
     private static final int DEFAULT_OK = 200;
     private static final int DEFAULT_ERROR = -1;
 

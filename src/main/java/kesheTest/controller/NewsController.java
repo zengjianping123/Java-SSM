@@ -1,6 +1,5 @@
 package kesheTest.controller;
 
-import com.sun.org.apache.xpath.internal.operations.Mod;
 import kesheTest.bean.News;
 import kesheTest.service.NewsService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +21,7 @@ public class NewsController {
     private static boolean isUserLogined = false;
     private static boolean isRootLogined = false;
 
-    @RequestMapping("login")
+    /*@RequestMapping("login")
     public String login(String user, String password){
         if((isRootLogined = true) || (isUserLogined = true)){
             isUserLogined = false;
@@ -30,6 +29,8 @@ public class NewsController {
         }
         if("root".equals(user) && "root".equals(password)){
             isRootLogined = true;
+            System.out.println("你已登录");
+
             return "redirect:/news/allNews";
         }
          else if ("123".equals(user) && "123".equals(password)){
@@ -40,7 +41,7 @@ public class NewsController {
              return "login";
          }
     }
-
+*/
     @RequestMapping("/allNews")
     public String list(Model model) {
         List<News> list = newsService.queryAllNews();
@@ -59,12 +60,7 @@ public class NewsController {
     public String newsList(Model model) {
         List<News> list = newsService.queryAllNews();
         model.addAttribute("list", list);
-        if(isUserLogined){
             return "newsList";
-        }
-        else {
-            return "redirect:/news/login";
-        }
     }
 
     @RequestMapping("/toAddNews")

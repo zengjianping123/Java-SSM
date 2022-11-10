@@ -12,4 +12,5 @@ public interface NewsMapper {
     News queryNewsByID(@Param("newsId") int id);
     List<News> queryAllNews();
     News queryNewsByHead(@Param("newsHead") String newsHead);
+
 }

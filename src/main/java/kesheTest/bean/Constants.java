@@ -1,4 +1,4 @@
-package com.xtyuns.common;
+package kesheTest.bean;
 
 public interface Constants {
     String CAPTCHA_KEY = "captcha";

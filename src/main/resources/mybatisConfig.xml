@@ -8,6 +8,6 @@
     </typeAliases>
 
     <mappers>
-        <mapper class="kesheTest.dao.NewsMapper"/>
+        <package name="kesheTest.dao"/>
     </mappers>
 </configuration>

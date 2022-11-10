@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<!DOCTYPE HTML>
+<script>
+  window.location.href = '${pageContext.request.contextPath}/page/toLogin'
+</script>
+<!--pageContext.request.contextPath 和applicationContext.baseUrl的结果一致-->
+<!--<!DOCTYPE HTML>
 <html>
 <head>
   <title>首页</title>
@@ -22,7 +26,8 @@
 </head>
 <body>
 <h3>
-  <a href="${pageContext.request.contextPath}/user/loginVeiw">点击进入环境智能检测系统</a>
+  <a href="{pageContext.request.contextPath}/user/loginVeiw">点击进入环境智能检测系统</a>
+
 </h3>
 </body>
-</html>
+</html>-->

@@ -3,7 +3,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8">
-    <title>CRM 后台管理系统</title>
+    <title>后台管理系统</title>
     <meta name="keywords" content="layuimini,layui,layui模板,layui后台,后台模板,admin,admin模板,layui mini">
     <meta name="description" content="layuimini基于layui的轻量级前端后台管理框架，最简洁、易用的后台框架模板，面向所有层次的前后端程序,只需提供一个接口就直接初始化整个框架，无需复杂操作。">
     <meta name="renderer" content="webkit">
@@ -52,7 +52,7 @@
                 </li>
                 <li class="layui-nav-item layuimini-setting">
                     <a href="javascript:;">
-                        <img src="${applicationScope.baseUrl}/file/showImg?filename=${sessionScope.user.img}" class="layui-nav-img">${sessionScope.user.realname}
+                        <img src="${applicationScope.baseUrl}/file/showImg?filename=${sessionScope.user.img}" class="layui-nav-img">${sessionScope.user.name}
                     </a>
                     <dl class="layui-nav-child">
                         <dd>
@@ -122,9 +122,9 @@
         const role = '${sessionScope.user.role}';
         let initUrl = '';
         if (role === '1')
-            initUrl = '${applicationScope.baseUrl}/test/api/init-menu-admin.json';
+            initUrl = '${applicationScope.baseUrl}/static/api/init-menu-admin.json';
         else if (role === '2')
-            initUrl = '${applicationScope.baseUrl}/test/api/init-menu-normal.json'
+            initUrl = '${applicationScope.baseUrl}/static/api/init-menu-normal.json'
 
 
         var options = {
